@@ -1,6 +1,6 @@
 .capti-home--links__icon-1:before, .capti-home--links__icon-2:before, .capti-home--links__icon-3:before, .capti-home--links__icon-4:before {
   display: inline-block;
-  background-image: url("/img/sprite.svg");
+  background-image: url("/capti-homepage/img/sprite.svg");
   background-size: 19.75em 18em; }
 
 @media (min-width: 1200px), (min-width: 992px), (min-width: 768px) {
