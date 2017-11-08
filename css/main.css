@@ -210,6 +210,48 @@
         fill: #2280c7;
         transition: fill .3s ease; }
 
+.capti-home--awards {
+  background-color: #f8fafb;
+  padding: 50px 0; }
+  .capti-home--awards__animation {
+    position: relative;
+    overflow: hidden; }
+    .capti-home--awards__animation:before, .capti-home--awards__animation:after {
+      content: '';
+      width: 50px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to right, #f8fafb 0%, rgba(248, 250, 251, 0) 100%);
+      z-index: 2; }
+    .capti-home--awards__animation:after {
+      left: auto;
+      right: 0;
+      background: linear-gradient(to right, rgba(248, 250, 251, 0) 0%, #f8fafb 100%); }
+  .capti-home--awards__list {
+    position: relative;
+    z-index: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 1200px;
+    animation: awards_run 80s linear infinite; }
+    .capti-home--awards__list li {
+      min-width: 200px;
+      width: 200px;
+      padding: 0 20px;
+      opacity: .3;
+      transition: opacity .3s ease; }
+      .capti-home--awards__list li:hover {
+        opacity: .8; }
+      .capti-home--awards__list li img {
+        height: auto;
+        width: 100%; }
+
 .capti-home--seo {
   position: relative;
   padding: 120px 0;
@@ -322,3 +364,9 @@
       color: #2280c7; }
     .capti-home--call_to_action__getquote i {
       margin-right: 5px; }
+
+@keyframes awards_run {
+  0% {
+    left: 0; }
+  100% {
+    left: -1200px; } }
