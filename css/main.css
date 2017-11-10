@@ -244,10 +244,8 @@
       min-width: 200px;
       width: 200px;
       padding: 0 20px;
-      opacity: .3;
+      opacity: .8;
       transition: opacity .3s ease; }
-      .capti-home--awards__list li:hover {
-        opacity: .8; }
       .capti-home--awards__list li img {
         height: auto;
         width: 100%; }
